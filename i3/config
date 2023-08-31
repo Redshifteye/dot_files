@@ -16,7 +16,7 @@ bindsym $mod+t split toggle
 # kill focused window
 bindsym $mod+Shift+q kill
 bindsym $mod+Shift+f focus floating
-focus_mode default
+#focus_mode default
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
 bindsym $mod+shift+p exec firefox
@@ -30,7 +30,7 @@ bindsym $mod+j focus left
 bindsym $mod+k focus down
 bindsym $mod+l focus up
 bindsym $mod+semicolon focus right
-
+bindsym $mod+Shift+m flameshot gui
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
@@ -93,6 +93,7 @@ bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
 
 # move focused container to workspace
+
 bindsym $mod+Shift+1 move container to workspace 1
 bindsym $mod+Shift+2 move container to workspace 2
 bindsym $mod+Shift+3 move container to workspace 3
@@ -138,6 +139,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # i3bar with i3blocks
+
 #bar {
 #    status_command i3blocks -c ~/.config/i3/i3blocks.conf
 #        i3bar_command i3bar -t
@@ -201,9 +203,12 @@ bindsym $mod+Ctrl+Shift+Down resize shrink height 10 px or 10 ppt
 bindsym $mod+Ctrl+Shift+Left resize grow width 10 px or 10 ppt
 bindsym $mod+Escape exec /home/awa/.config/rofi/scripts/powermenu_t2
 bindsym $mod+Shift+x exec /home/awa/.config/rofi/scripts/launcher_t1
-exec nitrogen --restore
+exec sudo nitrogen --restore
+exec /home/awa/.config/polybar/launch.sh
+exec killall i3bar
+exec sudo service snapd start && sudo service snapd.apparmor start
 bindsym $mod+ctrl+o exec --no-startup-id xfce4-panel --disable-wm-check
 bindsym $mod+Tab workspace next
-bindsym Shift+Tab workspace prev
+bindsym $mod+a+Shift+Tab workspace prev
 bindsym $mod+Shift+Tab workspace back_and_forth
                                                                                                                 

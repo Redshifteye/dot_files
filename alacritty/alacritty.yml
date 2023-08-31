@@ -11,7 +11,7 @@
   # check the local terminfo database and use `alacritty` if it is
   # available, otherwise `xterm-256color` is used.
   #TERM: xterm-256coloropacity: 0.5
-background_opacity: 1
+background_opacity: .98
 
 window:
   # Window dimensions (changes require restart)
@@ -183,7 +183,7 @@ draw_bold_text_with_bright_colors: true
 colors:
   # Default colors
   primary:
-    background: '0x101010'
+    background: '0x000000'
     foreground: '0xb9b9b9'
 
   # Normal colors
