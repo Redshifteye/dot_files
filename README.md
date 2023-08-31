@@ -10,3 +10,4 @@ Terminal: kitty
 ```
 ![image1](https://github.com/Lowkkii/dot_files/blob/main/images/Captura%20de%20tela_2023-05-24_23-49-12.png?raw=true)
 ![image2](https://github.com/Lowkkii/dot_files/blob/main/images/new%20term%20started%202.png?raw=true)
+![image3](https://github.com/Lowkkii/dot_files/blob/main/images/image.png?raw=true)
